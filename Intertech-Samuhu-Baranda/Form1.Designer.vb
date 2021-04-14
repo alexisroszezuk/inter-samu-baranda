@@ -41,12 +41,10 @@ Partial Class Form1
         Me.BtnPagoServicio = New System.Windows.Forms.Button()
         Me.btnClientes = New System.Windows.Forms.Button()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.LBLQUEDADEUDA = New System.Windows.Forms.Label()
-        Me.LBLESTADO = New System.Windows.Forms.Label()
-        Me.TXTSUBTOTALPAGOS = New System.Windows.Forms.TextBox()
-        Me.TXTSUBTOTALDEUDAS = New System.Windows.Forms.TextBox()
-        Me.TXTOBSERVACION = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.txtservidor = New System.Windows.Forms.TextBox()
+        Me.txtbasededatos = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -71,9 +69,9 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(361, 58)
+        Me.PictureBox1.Location = New System.Drawing.Point(383, 107)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(447, 193)
+        Me.PictureBox1.Size = New System.Drawing.Size(425, 268)
         Me.PictureBox1.TabIndex = 87
         Me.PictureBox1.TabStop = False
         '
@@ -208,7 +206,7 @@ Partial Class Form1
         Me.BtnDeudaFijas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnDeudaFijas.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnDeudaFijas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.BtnDeudaFijas.Location = New System.Drawing.Point(493, 329)
+        Me.BtnDeudaFijas.Location = New System.Drawing.Point(204, 161)
         Me.BtnDeudaFijas.Name = "BtnDeudaFijas"
         Me.BtnDeudaFijas.Size = New System.Drawing.Size(169, 39)
         Me.BtnDeudaFijas.TabIndex = 66
@@ -225,7 +223,7 @@ Partial Class Form1
         Me.BtnGastoIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnGastoIngreso.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnGastoIngreso.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.BtnGastoIngreso.Location = New System.Drawing.Point(635, 257)
+        Me.BtnGastoIngreso.Location = New System.Drawing.Point(204, 223)
         Me.BtnGastoIngreso.Name = "BtnGastoIngreso"
         Me.BtnGastoIngreso.Size = New System.Drawing.Size(173, 39)
         Me.BtnGastoIngreso.TabIndex = 65
@@ -242,7 +240,7 @@ Partial Class Form1
         Me.BtnCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnCaja.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnCaja.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.BtnCaja.Location = New System.Drawing.Point(361, 257)
+        Me.BtnCaja.Location = New System.Drawing.Point(200, 111)
         Me.BtnCaja.Name = "BtnCaja"
         Me.BtnCaja.Size = New System.Drawing.Size(173, 39)
         Me.BtnCaja.TabIndex = 64
@@ -290,63 +288,52 @@ Partial Class Form1
         Me.DateTimePicker1.Size = New System.Drawing.Size(93, 20)
         Me.DateTimePicker1.TabIndex = 76
         '
-        'LBLQUEDADEUDA
+        'txtservidor
         '
-        Me.LBLQUEDADEUDA.AutoSize = True
-        Me.LBLQUEDADEUDA.Location = New System.Drawing.Point(574, 158)
-        Me.LBLQUEDADEUDA.Name = "LBLQUEDADEUDA"
-        Me.LBLQUEDADEUDA.Size = New System.Drawing.Size(39, 13)
-        Me.LBLQUEDADEUDA.TabIndex = 77
-        Me.LBLQUEDADEUDA.Text = "Label6"
+        Me.txtservidor.Location = New System.Drawing.Point(392, 81)
+        Me.txtservidor.Name = "txtservidor"
+        Me.txtservidor.Size = New System.Drawing.Size(142, 20)
+        Me.txtservidor.TabIndex = 90
+        Me.txtservidor.Text = "192.168.248.3"
+        Me.txtservidor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'LBLESTADO
+        'txtbasededatos
         '
-        Me.LBLESTADO.AutoSize = True
-        Me.LBLESTADO.Location = New System.Drawing.Point(609, 182)
-        Me.LBLESTADO.Name = "LBLESTADO"
-        Me.LBLESTADO.Size = New System.Drawing.Size(39, 13)
-        Me.LBLESTADO.TabIndex = 80
-        Me.LBLESTADO.Text = "Label6"
+        Me.txtbasededatos.Location = New System.Drawing.Point(636, 78)
+        Me.txtbasededatos.Name = "txtbasededatos"
+        Me.txtbasededatos.Size = New System.Drawing.Size(142, 20)
+        Me.txtbasededatos.TabIndex = 91
+        Me.txtbasededatos.Text = "samuhu"
+        Me.txtbasededatos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'TXTSUBTOTALPAGOS
+        'Label3
         '
-        Me.TXTSUBTOTALPAGOS.Location = New System.Drawing.Point(612, 122)
-        Me.TXTSUBTOTALPAGOS.Name = "TXTSUBTOTALPAGOS"
-        Me.TXTSUBTOTALPAGOS.Size = New System.Drawing.Size(10, 20)
-        Me.TXTSUBTOTALPAGOS.TabIndex = 82
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(327, 81)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(46, 13)
+        Me.Label3.TabIndex = 88
+        Me.Label3.Text = "Servidor"
         '
-        'TXTSUBTOTALDEUDAS
+        'Label4
         '
-        Me.TXTSUBTOTALDEUDAS.Location = New System.Drawing.Point(566, 185)
-        Me.TXTSUBTOTALDEUDAS.Name = "TXTSUBTOTALDEUDAS"
-        Me.TXTSUBTOTALDEUDAS.Size = New System.Drawing.Size(10, 20)
-        Me.TXTSUBTOTALDEUDAS.TabIndex = 83
-        '
-        'TXTOBSERVACION
-        '
-        Me.TXTOBSERVACION.Enabled = False
-        Me.TXTOBSERVACION.Location = New System.Drawing.Point(630, 218)
-        Me.TXTOBSERVACION.Multiline = True
-        Me.TXTOBSERVACION.Name = "TXTOBSERVACION"
-        Me.TXTOBSERVACION.Size = New System.Drawing.Size(10, 27)
-        Me.TXTOBSERVACION.TabIndex = 84
-        Me.TXTOBSERVACION.Text = "INTERNET_PAGO"
-        Me.TXTOBSERVACION.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(630, 76)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(10, 21)
-        Me.ComboBox1.TabIndex = 86
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(551, 81)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(77, 13)
+        Me.Label4.TabIndex = 88
+        Me.Label4.Text = "Base de Datos"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(834, 417)
+        Me.Controls.Add(Me.txtbasededatos)
+        Me.Controls.Add(Me.txtservidor)
         Me.Controls.Add(Me.lblporcentaje)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lblpunto_de_venta)
@@ -365,14 +352,8 @@ Partial Class Form1
         Me.Controls.Add(Me.BtnPagoServicio)
         Me.Controls.Add(Me.btnClientes)
         Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.LBLQUEDADEUDA)
-        Me.Controls.Add(Me.LBLESTADO)
-        Me.Controls.Add(Me.TXTSUBTOTALPAGOS)
-        Me.Controls.Add(Me.TXTSUBTOTALDEUDAS)
-        Me.Controls.Add(Me.TXTOBSERVACION)
-        Me.Controls.Add(Me.ComboBox1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Menu Principal"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -398,10 +379,8 @@ Partial Class Form1
     Friend WithEvents BtnPagoServicio As Button
     Friend WithEvents btnClientes As Button
     Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents LBLQUEDADEUDA As Label
-    Friend WithEvents LBLESTADO As Label
-    Friend WithEvents TXTSUBTOTALPAGOS As TextBox
-    Friend WithEvents TXTSUBTOTALDEUDAS As TextBox
-    Friend WithEvents TXTOBSERVACION As TextBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents txtservidor As TextBox
+    Friend WithEvents txtbasededatos As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
 End Class
