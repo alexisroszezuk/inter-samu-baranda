@@ -37,36 +37,38 @@ Partial Class LoginForm1
         Me.Cancel = New System.Windows.Forms.Button()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'UsernameLabel
         '
-        Me.UsernameLabel.Location = New System.Drawing.Point(12, 7)
+        Me.UsernameLabel.Location = New System.Drawing.Point(74, 18)
         Me.UsernameLabel.Name = "UsernameLabel"
-        Me.UsernameLabel.Size = New System.Drawing.Size(220, 23)
+        Me.UsernameLabel.Size = New System.Drawing.Size(102, 23)
         Me.UsernameLabel.TabIndex = 0
         Me.UsernameLabel.Text = "&Nombre de usuario"
         Me.UsernameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'PasswordLabel
         '
-        Me.PasswordLabel.Location = New System.Drawing.Point(12, 64)
+        Me.PasswordLabel.Location = New System.Drawing.Point(83, 75)
         Me.PasswordLabel.Name = "PasswordLabel"
-        Me.PasswordLabel.Size = New System.Drawing.Size(220, 23)
+        Me.PasswordLabel.Size = New System.Drawing.Size(66, 23)
         Me.PasswordLabel.TabIndex = 2
         Me.PasswordLabel.Text = "&Contraseña"
         Me.PasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'TxtUsuario
         '
-        Me.TxtUsuario.Location = New System.Drawing.Point(14, 27)
+        Me.TxtUsuario.Location = New System.Drawing.Point(16, 44)
         Me.TxtUsuario.Name = "TxtUsuario"
         Me.TxtUsuario.Size = New System.Drawing.Size(220, 20)
         Me.TxtUsuario.TabIndex = 1
         '
         'TxtPassword
         '
-        Me.TxtPassword.Location = New System.Drawing.Point(14, 84)
+        Me.TxtPassword.Location = New System.Drawing.Point(16, 101)
         Me.TxtPassword.Name = "TxtPassword"
         Me.TxtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TxtPassword.Size = New System.Drawing.Size(220, 20)
@@ -105,6 +107,24 @@ Partial Class LoginForm1
         Me.ComboBox2.Size = New System.Drawing.Size(218, 21)
         Me.ComboBox2.TabIndex = 6
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(94, 151)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(46, 13)
+        Me.Label1.TabIndex = 7
+        Me.Label1.Text = "Servidor"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(81, 214)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(77, 13)
+        Me.Label2.TabIndex = 7
+        Me.Label2.Text = "Base de Datos"
+        '
         'LoginForm1
         '
         Me.AcceptButton = Me.OK
@@ -112,6 +132,8 @@ Partial Class LoginForm1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Cancel
         Me.ClientSize = New System.Drawing.Size(256, 318)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Cancel)
@@ -134,4 +156,6 @@ Partial Class LoginForm1
 
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class
