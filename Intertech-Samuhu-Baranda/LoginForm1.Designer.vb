@@ -35,15 +35,19 @@ Partial Class LoginForm1
         Me.TxtPassword = New System.Windows.Forms.TextBox()
         Me.OK = New System.Windows.Forms.Button()
         Me.Cancel = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.CmbServidor = New System.Windows.Forms.ComboBox()
+        Me.CmbBasedeDatos = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.cmbIpRouterBoard = New System.Windows.Forms.ComboBox()
+        Me.Cmb = New System.Windows.Forms.ComboBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'UsernameLabel
         '
-        Me.UsernameLabel.Location = New System.Drawing.Point(74, 18)
+        Me.UsernameLabel.Location = New System.Drawing.Point(105, 137)
         Me.UsernameLabel.Name = "UsernameLabel"
         Me.UsernameLabel.Size = New System.Drawing.Size(102, 23)
         Me.UsernameLabel.TabIndex = 0
@@ -52,7 +56,7 @@ Partial Class LoginForm1
         '
         'PasswordLabel
         '
-        Me.PasswordLabel.Location = New System.Drawing.Point(83, 75)
+        Me.PasswordLabel.Location = New System.Drawing.Point(114, 194)
         Me.PasswordLabel.Name = "PasswordLabel"
         Me.PasswordLabel.Size = New System.Drawing.Size(66, 23)
         Me.PasswordLabel.TabIndex = 2
@@ -61,14 +65,14 @@ Partial Class LoginForm1
         '
         'TxtUsuario
         '
-        Me.TxtUsuario.Location = New System.Drawing.Point(16, 44)
+        Me.TxtUsuario.Location = New System.Drawing.Point(47, 163)
         Me.TxtUsuario.Name = "TxtUsuario"
         Me.TxtUsuario.Size = New System.Drawing.Size(220, 20)
         Me.TxtUsuario.TabIndex = 1
         '
         'TxtPassword
         '
-        Me.TxtPassword.Location = New System.Drawing.Point(16, 101)
+        Me.TxtPassword.Location = New System.Drawing.Point(47, 220)
         Me.TxtPassword.Name = "TxtPassword"
         Me.TxtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TxtPassword.Size = New System.Drawing.Size(220, 20)
@@ -76,7 +80,7 @@ Partial Class LoginForm1
         '
         'OK
         '
-        Me.OK.Location = New System.Drawing.Point(12, 283)
+        Me.OK.Location = New System.Drawing.Point(46, 392)
         Me.OK.Name = "OK"
         Me.OK.Size = New System.Drawing.Size(94, 23)
         Me.OK.TabIndex = 4
@@ -85,32 +89,32 @@ Partial Class LoginForm1
         'Cancel
         '
         Me.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Cancel.Location = New System.Drawing.Point(140, 283)
+        Me.Cancel.Location = New System.Drawing.Point(174, 392)
         Me.Cancel.Name = "Cancel"
         Me.Cancel.Size = New System.Drawing.Size(94, 23)
         Me.Cancel.TabIndex = 5
         Me.Cancel.Text = "&Cancelar"
         '
-        'ComboBox1
+        'CmbServidor
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(16, 167)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(218, 21)
-        Me.ComboBox1.TabIndex = 6
+        Me.CmbServidor.FormattingEnabled = True
+        Me.CmbServidor.Location = New System.Drawing.Point(51, 22)
+        Me.CmbServidor.Name = "CmbServidor"
+        Me.CmbServidor.Size = New System.Drawing.Size(218, 21)
+        Me.CmbServidor.TabIndex = 6
         '
-        'ComboBox2
+        'CmbBasedeDatos
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(16, 230)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(218, 21)
-        Me.ComboBox2.TabIndex = 6
+        Me.CmbBasedeDatos.FormattingEnabled = True
+        Me.CmbBasedeDatos.Location = New System.Drawing.Point(51, 85)
+        Me.CmbBasedeDatos.Name = "CmbBasedeDatos"
+        Me.CmbBasedeDatos.Size = New System.Drawing.Size(218, 21)
+        Me.CmbBasedeDatos.TabIndex = 6
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(94, 151)
+        Me.Label1.Location = New System.Drawing.Point(129, 6)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(46, 13)
         Me.Label1.TabIndex = 7
@@ -119,11 +123,45 @@ Partial Class LoginForm1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(81, 214)
+        Me.Label2.Location = New System.Drawing.Point(116, 69)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(77, 13)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Base de Datos"
+        '
+        'cmbIpRouterBoard
+        '
+        Me.cmbIpRouterBoard.FormattingEnabled = True
+        Me.cmbIpRouterBoard.Location = New System.Drawing.Point(303, 22)
+        Me.cmbIpRouterBoard.Name = "cmbIpRouterBoard"
+        Me.cmbIpRouterBoard.Size = New System.Drawing.Size(218, 21)
+        Me.cmbIpRouterBoard.TabIndex = 6
+        '
+        'Cmb
+        '
+        Me.Cmb.FormattingEnabled = True
+        Me.Cmb.Location = New System.Drawing.Point(303, 85)
+        Me.Cmb.Name = "Cmb"
+        Me.Cmb.Size = New System.Drawing.Size(218, 21)
+        Me.Cmb.TabIndex = 6
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(366, 6)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(79, 13)
+        Me.Label3.TabIndex = 7
+        Me.Label3.Text = "Ip RouterBoard"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(368, 69)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(77, 13)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "Base de Datos"
         '
         'LoginForm1
         '
@@ -131,11 +169,15 @@ Partial Class LoginForm1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Cancel
-        Me.ClientSize = New System.Drawing.Size(256, 318)
+        Me.ClientSize = New System.Drawing.Size(628, 427)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Cmb)
+        Me.Controls.Add(Me.cmbIpRouterBoard)
+        Me.Controls.Add(Me.CmbBasedeDatos)
+        Me.Controls.Add(Me.CmbServidor)
         Me.Controls.Add(Me.Cancel)
         Me.Controls.Add(Me.OK)
         Me.Controls.Add(Me.TxtPassword)
@@ -154,8 +196,12 @@ Partial Class LoginForm1
 
     End Sub
 
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents CmbServidor As ComboBox
+    Friend WithEvents CmbBasedeDatos As ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents cmbIpRouterBoard As ComboBox
+    Friend WithEvents Cmb As ComboBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
 End Class
