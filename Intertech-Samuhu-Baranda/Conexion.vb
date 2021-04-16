@@ -1,7 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Module Conexion
-    Public conn As New MySqlConnection("Server='" + Form1.txtservidor.Text + "'; User Id=superalexis; Password=i7UoksT3tQFNsema; Database='" + Form1.txtbasededatos.Text + "'")
+    Public conn As New MySqlConnection("Server='" + LoginForm1.CmbServidor.Text + "'; User Id=superalexis; Password='" + LoginForm1.cmbClaveBasedeDatos.Text + "'; Database='" + LoginForm1.CmbBasedeDatos.Text + "'")
     Public conn2 As New MySqlConnection("Server=192.168.248.3; User Id=superalexis; Password=i7UoksT3tQFNsema; Database=serverinfo")
     Public cmd As New MySqlCommand
     Public dr As MySqlDataReader

@@ -10,8 +10,38 @@ Public Class LoginForm1
     ' como el nombre de usuario, nombre para mostrar, etc.
 
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
-        Me.Close()
+        Dim conexion = conn
+        Try
+            conn.Open()
+
+            Dim comando As MySqlCommand = New MySqlCommand
+            comando.Connection = conexion
+
+            comando.CommandText = "SELECT * FROM USUARIOS WHERE USUARIO ='" + TxtUsuario.Text + "' and PASSWORD = '" + TxtPassword.Text + "'"
+            Dim r As MySqlDataReader
+
+            r = comando.ExecuteReader
+
+            If r.HasRows <> False Then
+                r.Read()
+                'MsgBox(r.GetString("usuario"))
+                Form1.Show()
+                Form1.LBLUSUARIO.Text = r.GetString("usuario")
+                Form1.LBLIDUSUARIO.Text = r.GetString("idusuario")
+                conn.Close()
+                Me.Hide()
+
+            Else
+                MsgBox("Acceso Incorrecto")
+                conn.Close()
+            End If
+        Catch ex As Exception
+            MsgBox("no se pudo conectar")
+        End Try
+
     End Sub
+
+
 
     Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel.Click
         Me.Close()
@@ -36,6 +66,16 @@ Public Class LoginForm1
             Me.CmbServidor.DisplayMember = "ip_servidor_mysql"
             Me.CmbBasedeDatos.DataSource = dsDPc.Tables("servidores")
             Me.CmbBasedeDatos.DisplayMember = "database"
+            Me.cmbIpRouterBoard.DataSource = dsDPc.Tables("servidores")
+            Me.cmbIpRouterBoard.DisplayMember = "ip_routerboard"
+            Me.CmbClaveRouter.DataSource = dsDPc.Tables("servidores")
+            Me.CmbClaveRouter.DisplayMember = "password"
+            Me.CmbUsuarioRouter.DataSource = dsDPc.Tables("servidores")
+            Me.CmbUsuarioRouter.DisplayMember = "usuariorb"
+            Me.CmbEstado.DataSource = dsDPc.Tables("servidores")
+            Me.CmbEstado.DisplayMember = "estado"
+            Me.cmbClaveBasedeDatos.DataSource = dsDPc.Tables("servidores")
+            Me.cmbClaveBasedeDatos.DisplayMember = "passworddb"
             conn2.Close()
         Else
             'MsgBox("LA CUENTA DE FACTURAS SE ABRIO EXITOSAMENTE", vbCritical, "ATENCIÓN")
