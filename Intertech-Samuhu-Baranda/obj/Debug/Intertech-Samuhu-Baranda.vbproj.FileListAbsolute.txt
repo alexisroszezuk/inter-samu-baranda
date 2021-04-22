@@ -86,3 +86,6 @@ C:\Users\alexi\Documents\Trabajos\Intertech-Samuhu-Baranda\Intertech-Samuhu-Bara
 C:\Users\alexi\Source\Repos\alexisroszezuk\inter-samu-baranda\Intertech-Samuhu-Baranda\obj\Debug\Intertech_Samuhu_Baranda.Clientes.resources
 C:\Users\alexi\Source\Repos\alexisroszezuk\inter-samu-baranda\Intertech-Samuhu-Baranda\obj\Debug\Intertech_Samuhu_Baranda.NuevoCliente.resources
 C:\Users\alexi\Source\Repos\alexisroszezuk\inter-samu-baranda\Intertech-Samuhu-Baranda\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\alexi\Documents\Trabajos\Intertech-Samuhu-Baranda\Intertech-Samuhu-Baranda\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\alexi\Documents\Trabajos\Intertech-Samuhu-Baranda\Intertech-Samuhu-Baranda\obj\Debug\Intertech_Samuhu_Baranda.Clientes.resources
+C:\Users\alexi\Documents\Trabajos\Intertech-Samuhu-Baranda\Intertech-Samuhu-Baranda\obj\Debug\Intertech_Samuhu_Baranda.NuevoCliente.resources

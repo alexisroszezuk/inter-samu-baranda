@@ -17,4 +17,16 @@ Public Class Form1
         Me.lblhora.Text = DateTimePicker1.Value.ToString("HH:mm:ss")
         Me.LBLMES.Text = DateTimePicker1.Value.ToString("yyyy/MM")
     End Sub
+
+    Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles BtnClientes.Click, IconButton5.Click, IconButton4.Click, IconButton3.Click, IconButton2.Click
+        Clientes.Show()
+        Clientes.Focus()
+
+
+    End Sub
+
+    Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        End
+
+    End Sub
 End Class
