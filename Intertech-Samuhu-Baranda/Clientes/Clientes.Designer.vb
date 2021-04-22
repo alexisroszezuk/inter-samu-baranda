@@ -23,8 +23,8 @@ Partial Class Clientes
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.btnNuevoCLiente = New FontAwesome.Sharp.IconButton()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -33,24 +33,12 @@ Partial Class Clientes
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.GrayText
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.btnNuevoCLiente)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1032, 74)
+        Me.Panel1.Size = New System.Drawing.Size(1032, 92)
         Me.Panel1.TabIndex = 0
-        '
-        'Button1
-        '
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button1.Location = New System.Drawing.Point(10, 10)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(110, 47)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Nuevo"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
@@ -60,11 +48,29 @@ Partial Class Clientes
         Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView1.Location = New System.Drawing.Point(0, 74)
+        Me.DataGridView1.Location = New System.Drawing.Point(0, 92)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(1032, 419)
+        Me.DataGridView1.Size = New System.Drawing.Size(1032, 401)
         Me.DataGridView1.TabIndex = 1
+        '
+        'btnNuevoCLiente
+        '
+        Me.btnNuevoCLiente.FlatAppearance.BorderSize = 0
+        Me.btnNuevoCLiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnNuevoCLiente.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNuevoCLiente.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnNuevoCLiente.IconChar = FontAwesome.Sharp.IconChar.PlusSquare
+        Me.btnNuevoCLiente.IconColor = System.Drawing.Color.White
+        Me.btnNuevoCLiente.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnNuevoCLiente.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnNuevoCLiente.Location = New System.Drawing.Point(6, 10)
+        Me.btnNuevoCLiente.Name = "btnNuevoCLiente"
+        Me.btnNuevoCLiente.Size = New System.Drawing.Size(106, 74)
+        Me.btnNuevoCLiente.TabIndex = 0
+        Me.btnNuevoCLiente.Text = "Nuevo Cliente"
+        Me.btnNuevoCLiente.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnNuevoCLiente.UseVisualStyleBackColor = True
         '
         'Clientes
         '
@@ -83,6 +89,6 @@ Partial Class Clientes
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button1 As Button
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents btnNuevoCLiente As FontAwesome.Sharp.IconButton
 End Class
