@@ -18,7 +18,7 @@ Module Conexion
     End Sub
 
 
-    Public conn2 As New MySqlConnection("Server=localhost; User Id=superalexis; Password=i7UoksT3tQFNsema; Database=serverinfo")
+    Public conn2 As New MySqlConnection("Server=192.168.248.3; User Id=superalexis; Password=i7UoksT3tQFNsema; Database=serverinfo")
     Public cmd As New MySqlCommand
     Public dr As MySqlDataReader
     Public sql As String = ""
