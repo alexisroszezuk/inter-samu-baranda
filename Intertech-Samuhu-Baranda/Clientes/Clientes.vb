@@ -21,7 +21,7 @@ Public Class Clientes
     End Sub
 
 
-    Private Sub cargaClientes()
+    Public Sub cargaClientes()
         Dim Basededatos As New MySqlConnectionStringBuilder()
         Basededatos.Server = LoginForm1.cmbservidormysql.Text
         Basededatos.UserID = LoginForm1.cmbusuariodb.Text
@@ -33,15 +33,24 @@ Public Class Clientes
         Dim dsDPc As DataSet
         Dim lista As Byte
         Dim consulta As String
-        consulta = "SELECT * FROM clientes"
+        consulta = "SELECT * FROM CLIENTES"
         adaptadorPP = New MySqlDataAdapter(consulta, con)
         dsDPc = New DataSet
-        adaptadorPP.Fill(dsDPc, "clientes")
-        lista = dsDPc.Tables("clientes").Rows.Count
+        adaptadorPP.Fill(dsDPc, "CLIENTES")
+        lista = dsDPc.Tables("CLIENTES").Rows.Count
         If lista <> 0 Then
-            DataGridView1.DataSource = dsDPc.Tables("clientes")
+            DataGridView1.DataSource = dsDPc.Tables("CLIENTES")
+
         Else
-            'MsgBox("LA CUENTA DE FACTURAS SE ABRIO EXITOSAMENTE", vbCritical, "ATENCIÓN")
+            MsgBox("No se puede Cargar La tabla Clientes", vbCritical, "ATENCIÓN")
+            con.Close()
         End If
+        con.Close()
+    End Sub
+
+    Private Sub BtnClientes_Click(sender As Object, e As EventArgs) Handles BtnClientes.Click
+        Me.Close()
+        Form1.Focus()
+
     End Sub
 End Class

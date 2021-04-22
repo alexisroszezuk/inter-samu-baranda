@@ -37,12 +37,12 @@ Partial Class Form1
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.BtnGastos = New FontAwesome.Sharp.IconButton()
+        Me.BtnCajas = New FontAwesome.Sharp.IconButton()
+        Me.BtnCobranza = New FontAwesome.Sharp.IconButton()
+        Me.btnConexiones = New FontAwesome.Sharp.IconButton()
         Me.BtnClientes = New FontAwesome.Sharp.IconButton()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.IconButton2 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton3 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton4 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton5 = New FontAwesome.Sharp.IconButton()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -175,10 +175,10 @@ Partial Class Form1
         '
         Me.Panel2.BackColor = System.Drawing.Color.Black
         Me.Panel2.Controls.Add(Me.PictureBox1)
-        Me.Panel2.Controls.Add(Me.IconButton5)
-        Me.Panel2.Controls.Add(Me.IconButton4)
-        Me.Panel2.Controls.Add(Me.IconButton3)
-        Me.Panel2.Controls.Add(Me.IconButton2)
+        Me.Panel2.Controls.Add(Me.BtnGastos)
+        Me.Panel2.Controls.Add(Me.BtnCajas)
+        Me.Panel2.Controls.Add(Me.BtnCobranza)
+        Me.Panel2.Controls.Add(Me.btnConexiones)
         Me.Panel2.Controls.Add(Me.BtnClientes)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
@@ -195,6 +195,86 @@ Partial Class Form1
         Me.PictureBox1.Size = New System.Drawing.Size(169, 74)
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
+        '
+        'BtnGastos
+        '
+        Me.BtnGastos.BackColor = System.Drawing.Color.Transparent
+        Me.BtnGastos.FlatAppearance.BorderSize = 0
+        Me.BtnGastos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.BtnGastos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
+        Me.BtnGastos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnGastos.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnGastos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnGastos.IconChar = FontAwesome.Sharp.IconChar.Tasks
+        Me.BtnGastos.IconColor = System.Drawing.Color.WhiteSmoke
+        Me.BtnGastos.IconFont = FontAwesome.Sharp.IconFont.Solid
+        Me.BtnGastos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnGastos.Location = New System.Drawing.Point(3, 373)
+        Me.BtnGastos.Name = "BtnGastos"
+        Me.BtnGastos.Size = New System.Drawing.Size(194, 56)
+        Me.BtnGastos.TabIndex = 0
+        Me.BtnGastos.Text = "Gastos"
+        Me.BtnGastos.UseVisualStyleBackColor = False
+        '
+        'BtnCajas
+        '
+        Me.BtnCajas.BackColor = System.Drawing.Color.Transparent
+        Me.BtnCajas.FlatAppearance.BorderSize = 0
+        Me.BtnCajas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.BtnCajas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
+        Me.BtnCajas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCajas.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCajas.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnCajas.IconChar = FontAwesome.Sharp.IconChar.Receipt
+        Me.BtnCajas.IconColor = System.Drawing.Color.WhiteSmoke
+        Me.BtnCajas.IconFont = FontAwesome.Sharp.IconFont.Solid
+        Me.BtnCajas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnCajas.Location = New System.Drawing.Point(3, 311)
+        Me.BtnCajas.Name = "BtnCajas"
+        Me.BtnCajas.Size = New System.Drawing.Size(194, 56)
+        Me.BtnCajas.TabIndex = 0
+        Me.BtnCajas.Text = "Cajas"
+        Me.BtnCajas.UseVisualStyleBackColor = False
+        '
+        'BtnCobranza
+        '
+        Me.BtnCobranza.BackColor = System.Drawing.Color.Transparent
+        Me.BtnCobranza.FlatAppearance.BorderSize = 0
+        Me.BtnCobranza.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.BtnCobranza.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
+        Me.BtnCobranza.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCobranza.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCobranza.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnCobranza.IconChar = FontAwesome.Sharp.IconChar.SearchDollar
+        Me.BtnCobranza.IconColor = System.Drawing.Color.WhiteSmoke
+        Me.BtnCobranza.IconFont = FontAwesome.Sharp.IconFont.Solid
+        Me.BtnCobranza.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnCobranza.Location = New System.Drawing.Point(3, 249)
+        Me.BtnCobranza.Name = "BtnCobranza"
+        Me.BtnCobranza.Size = New System.Drawing.Size(194, 56)
+        Me.BtnCobranza.TabIndex = 0
+        Me.BtnCobranza.Text = "Cobranza"
+        Me.BtnCobranza.UseVisualStyleBackColor = False
+        '
+        'btnConexiones
+        '
+        Me.btnConexiones.BackColor = System.Drawing.Color.Transparent
+        Me.btnConexiones.FlatAppearance.BorderSize = 0
+        Me.btnConexiones.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.btnConexiones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
+        Me.btnConexiones.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnConexiones.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConexiones.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnConexiones.IconChar = FontAwesome.Sharp.IconChar.Podcast
+        Me.btnConexiones.IconColor = System.Drawing.Color.WhiteSmoke
+        Me.btnConexiones.IconFont = FontAwesome.Sharp.IconFont.Solid
+        Me.btnConexiones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnConexiones.Location = New System.Drawing.Point(3, 187)
+        Me.btnConexiones.Name = "btnConexiones"
+        Me.btnConexiones.Size = New System.Drawing.Size(194, 56)
+        Me.btnConexiones.TabIndex = 0
+        Me.btnConexiones.Text = "Conexiones"
+        Me.btnConexiones.UseVisualStyleBackColor = False
         '
         'BtnClientes
         '
@@ -228,86 +308,6 @@ Partial Class Form1
         Me.Panel1.Size = New System.Drawing.Size(851, 55)
         Me.Panel1.TabIndex = 94
         '
-        'IconButton2
-        '
-        Me.IconButton2.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton2.FlatAppearance.BorderSize = 0
-        Me.IconButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.IconButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
-        Me.IconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton2.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.Podcast
-        Me.IconButton2.IconColor = System.Drawing.Color.WhiteSmoke
-        Me.IconButton2.IconFont = FontAwesome.Sharp.IconFont.Solid
-        Me.IconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton2.Location = New System.Drawing.Point(3, 187)
-        Me.IconButton2.Name = "IconButton2"
-        Me.IconButton2.Size = New System.Drawing.Size(194, 56)
-        Me.IconButton2.TabIndex = 0
-        Me.IconButton2.Text = "Conexiones"
-        Me.IconButton2.UseVisualStyleBackColor = False
-        '
-        'IconButton3
-        '
-        Me.IconButton3.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton3.FlatAppearance.BorderSize = 0
-        Me.IconButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.IconButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
-        Me.IconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton3.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.IconButton3.IconChar = FontAwesome.Sharp.IconChar.SearchDollar
-        Me.IconButton3.IconColor = System.Drawing.Color.WhiteSmoke
-        Me.IconButton3.IconFont = FontAwesome.Sharp.IconFont.Solid
-        Me.IconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton3.Location = New System.Drawing.Point(3, 249)
-        Me.IconButton3.Name = "IconButton3"
-        Me.IconButton3.Size = New System.Drawing.Size(194, 56)
-        Me.IconButton3.TabIndex = 0
-        Me.IconButton3.Text = "Cobranza"
-        Me.IconButton3.UseVisualStyleBackColor = False
-        '
-        'IconButton4
-        '
-        Me.IconButton4.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton4.FlatAppearance.BorderSize = 0
-        Me.IconButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.IconButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
-        Me.IconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton4.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.IconButton4.IconChar = FontAwesome.Sharp.IconChar.Receipt
-        Me.IconButton4.IconColor = System.Drawing.Color.WhiteSmoke
-        Me.IconButton4.IconFont = FontAwesome.Sharp.IconFont.Solid
-        Me.IconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton4.Location = New System.Drawing.Point(3, 311)
-        Me.IconButton4.Name = "IconButton4"
-        Me.IconButton4.Size = New System.Drawing.Size(194, 56)
-        Me.IconButton4.TabIndex = 0
-        Me.IconButton4.Text = "Cajas"
-        Me.IconButton4.UseVisualStyleBackColor = False
-        '
-        'IconButton5
-        '
-        Me.IconButton5.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton5.FlatAppearance.BorderSize = 0
-        Me.IconButton5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.IconButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
-        Me.IconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton5.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.IconButton5.IconChar = FontAwesome.Sharp.IconChar.Tasks
-        Me.IconButton5.IconColor = System.Drawing.Color.WhiteSmoke
-        Me.IconButton5.IconFont = FontAwesome.Sharp.IconFont.Solid
-        Me.IconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton5.Location = New System.Drawing.Point(3, 373)
-        Me.IconButton5.Name = "IconButton5"
-        Me.IconButton5.Size = New System.Drawing.Size(194, 56)
-        Me.IconButton5.TabIndex = 0
-        Me.IconButton5.Text = "Gastos"
-        Me.IconButton5.UseVisualStyleBackColor = False
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -325,6 +325,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Panel2.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
@@ -349,8 +350,8 @@ Partial Class Form1
     Friend WithEvents BtnClientes As FontAwesome.Sharp.IconButton
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents IconButton5 As FontAwesome.Sharp.IconButton
-    Friend WithEvents IconButton4 As FontAwesome.Sharp.IconButton
-    Friend WithEvents IconButton3 As FontAwesome.Sharp.IconButton
-    Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
+    Friend WithEvents BtnGastos As FontAwesome.Sharp.IconButton
+    Friend WithEvents BtnCajas As FontAwesome.Sharp.IconButton
+    Friend WithEvents BtnCobranza As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnConexiones As FontAwesome.Sharp.IconButton
 End Class

@@ -109,6 +109,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Conexion.vb" />
+    <Compile Include="Conexiones\Conexiones.Designer.vb">
+      <DependentUpon>Conexiones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Conexiones\Conexiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Principal\Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,9 @@
     <EmbeddedResource Include="Clientes\NuevoCliente.resx">
       <DependentUpon>NuevoCliente.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Conexiones\Conexiones.resx">
+      <DependentUpon>Conexiones.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -173,7 +182,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Conexiones\" />
     <Folder Include="Facturacion\" />
     <Folder Include="Gastos\" />
     <Folder Include="Pagos\" />

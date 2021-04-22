@@ -1,7 +1,8 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class NuevoCliente
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
-        GuardarCliente
+        btnGuardar.Enabled = False
+        GuardarCliente()
     End Sub
     Private Sub GuardarCliente()
         Dim Basededatos As New MySqlConnectionStringBuilder()
@@ -36,6 +37,10 @@ Public Class NuevoCliente
             cmd.ExecuteNonQuery()
             MsgBox("La información se guardo correctamente..!", MsgBoxStyle.Information, "Registro de Gastos")
             con.Close()
+            Clientes.cargaClientes()
+            Me.Close()
+            Clientes.Focus()
+
             'Cerramos la conexión
         Catch ex As Exception
             ex.Message.ToUpper()

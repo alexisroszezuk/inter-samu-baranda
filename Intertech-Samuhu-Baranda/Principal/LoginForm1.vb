@@ -9,9 +9,7 @@ Public Class LoginForm1
     ' Posteriormente, My.User devolverá la información de identidad encapsulada en el objeto CustomPrincipal
     ' como el nombre de usuario, nombre para mostrar, etc.
 
-    Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
-        CompruebaUsuario()
-    End Sub
+
     Private Sub CompruebaUsuario()
         Dim Basededatos As New MySqlConnectionStringBuilder()
         Basededatos.Server = cmbservidormysql.Text
@@ -52,9 +50,7 @@ Public Class LoginForm1
 
 
 
-    Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel.Click
-        Me.Close()
-    End Sub
+
 
     Private Sub LoginForm1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CargaServidores()
@@ -96,5 +92,35 @@ Public Class LoginForm1
         End If
     End Sub
 
+    Private Sub ok_Click(sender As Object, e As EventArgs) Handles ok.Click
+        CompruebaUsuario()
+    End Sub
 
+    Private Sub Cancel_Click(sender As Object, e As EventArgs) Handles Cancel.Click
+        Me.Close()
+    End Sub
+
+    Private Sub TxtUsuario_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtUsuario.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            e.Handled = True
+            If TxtPassword.Text = "" Then
+                TxtPassword.BackColor = Color.Red
+                TxtPassword.Focus()
+            Else
+                CompruebaUsuario()
+            End If
+        End If
+    End Sub
+
+    Private Sub TxtPassword_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtPassword.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            e.Handled = True
+            If TxtUsuario.Text = "" Then
+                TxtUsuario.BackColor = Color.Red
+                TxtUsuario.Focus()
+            Else
+                CompruebaUsuario()
+            End If
+        End If
+    End Sub
 End Class

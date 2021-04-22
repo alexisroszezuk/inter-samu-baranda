@@ -18,7 +18,7 @@ Public Class Form1
         Me.LBLMES.Text = DateTimePicker1.Value.ToString("yyyy/MM")
     End Sub
 
-    Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles BtnClientes.Click, IconButton5.Click, IconButton4.Click, IconButton3.Click, IconButton2.Click
+    Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles BtnClientes.Click
         Clientes.Show()
         Clientes.Focus()
 
@@ -28,5 +28,10 @@ Public Class Form1
     Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         End
 
+    End Sub
+
+    Private Sub IconButton2_Click(sender As Object, e As EventArgs) Handles btnConexiones.Click
+        Conexiones.Show()
+        Conexiones.Focus()
     End Sub
 End Class
