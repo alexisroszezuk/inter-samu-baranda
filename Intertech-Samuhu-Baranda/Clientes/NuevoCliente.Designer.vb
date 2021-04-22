@@ -56,7 +56,7 @@ Partial Class NuevoCliente
         Me.Label1.Location = New System.Drawing.Point(12, 79)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(168, 34)
-        Me.Label1.TabIndex = 0
+        Me.Label1.TabIndex = 99
         Me.Label1.Text = "Nombre Completo"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -68,7 +68,7 @@ Partial Class NuevoCliente
         Me.txtNombreCompleto.Location = New System.Drawing.Point(197, 84)
         Me.txtNombreCompleto.Name = "txtNombreCompleto"
         Me.txtNombreCompleto.Size = New System.Drawing.Size(279, 27)
-        Me.txtNombreCompleto.TabIndex = 1
+        Me.txtNombreCompleto.TabIndex = 0
         Me.txtNombreCompleto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'btnGuardar
@@ -84,7 +84,7 @@ Partial Class NuevoCliente
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Rotation = 20.0R
         Me.btnGuardar.Size = New System.Drawing.Size(205, 58)
-        Me.btnGuardar.TabIndex = 2
+        Me.btnGuardar.TabIndex = 8
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = False
         '
@@ -141,7 +141,7 @@ Partial Class NuevoCliente
         Me.Label2.Location = New System.Drawing.Point(51, 11)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(162, 23)
-        Me.Label2.TabIndex = 0
+        Me.Label2.TabIndex = 99
         Me.Label2.Text = "Nuevo Cliente"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -153,7 +153,7 @@ Partial Class NuevoCliente
         Me.Label3.Location = New System.Drawing.Point(12, 113)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(168, 34)
-        Me.Label3.TabIndex = 0
+        Me.Label3.TabIndex = 99
         Me.Label3.Text = "Domicilio Legal"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -176,7 +176,7 @@ Partial Class NuevoCliente
         Me.Label4.Location = New System.Drawing.Point(12, 147)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(168, 34)
-        Me.Label4.TabIndex = 0
+        Me.Label4.TabIndex = 99
         Me.Label4.Text = "Celular"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -188,7 +188,7 @@ Partial Class NuevoCliente
         Me.txtCelular.Location = New System.Drawing.Point(197, 152)
         Me.txtCelular.Name = "txtCelular"
         Me.txtCelular.Size = New System.Drawing.Size(279, 27)
-        Me.txtCelular.TabIndex = 1
+        Me.txtCelular.TabIndex = 2
         Me.txtCelular.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label5
@@ -199,7 +199,7 @@ Partial Class NuevoCliente
         Me.Label5.Location = New System.Drawing.Point(12, 181)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(168, 34)
-        Me.Label5.TabIndex = 0
+        Me.Label5.TabIndex = 99
         Me.Label5.Text = "DNI"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -211,7 +211,7 @@ Partial Class NuevoCliente
         Me.TxtDni.Location = New System.Drawing.Point(197, 186)
         Me.TxtDni.Name = "TxtDni"
         Me.TxtDni.Size = New System.Drawing.Size(279, 27)
-        Me.TxtDni.TabIndex = 1
+        Me.TxtDni.TabIndex = 3
         Me.TxtDni.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label6
@@ -222,7 +222,7 @@ Partial Class NuevoCliente
         Me.Label6.Location = New System.Drawing.Point(12, 215)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(168, 34)
-        Me.Label6.TabIndex = 0
+        Me.Label6.TabIndex = 99
         Me.Label6.Text = "Ciudad"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -234,7 +234,7 @@ Partial Class NuevoCliente
         Me.TxtCiudad.Location = New System.Drawing.Point(197, 220)
         Me.TxtCiudad.Name = "TxtCiudad"
         Me.TxtCiudad.Size = New System.Drawing.Size(279, 27)
-        Me.TxtCiudad.TabIndex = 1
+        Me.TxtCiudad.TabIndex = 4
         Me.TxtCiudad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label7
@@ -245,7 +245,7 @@ Partial Class NuevoCliente
         Me.Label7.Location = New System.Drawing.Point(12, 249)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(168, 34)
-        Me.Label7.TabIndex = 0
+        Me.Label7.TabIndex = 99
         Me.Label7.Text = "Provincia"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -257,7 +257,7 @@ Partial Class NuevoCliente
         Me.TxtProvincia.Location = New System.Drawing.Point(197, 254)
         Me.TxtProvincia.Name = "TxtProvincia"
         Me.TxtProvincia.Size = New System.Drawing.Size(279, 27)
-        Me.TxtProvincia.TabIndex = 1
+        Me.TxtProvincia.TabIndex = 5
         Me.TxtProvincia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label8
@@ -268,7 +268,7 @@ Partial Class NuevoCliente
         Me.Label8.Location = New System.Drawing.Point(12, 283)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(168, 34)
-        Me.Label8.TabIndex = 0
+        Me.Label8.TabIndex = 99
         Me.Label8.Text = "Email"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -280,7 +280,7 @@ Partial Class NuevoCliente
         Me.TxtEmail.Location = New System.Drawing.Point(197, 288)
         Me.TxtEmail.Name = "TxtEmail"
         Me.TxtEmail.Size = New System.Drawing.Size(279, 27)
-        Me.TxtEmail.TabIndex = 1
+        Me.TxtEmail.TabIndex = 6
         Me.TxtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label9
@@ -291,7 +291,7 @@ Partial Class NuevoCliente
         Me.Label9.Location = New System.Drawing.Point(12, 316)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(168, 34)
-        Me.Label9.TabIndex = 0
+        Me.Label9.TabIndex = 99
         Me.Label9.Text = "Observacion"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -304,7 +304,7 @@ Partial Class NuevoCliente
         Me.TxtObservacion.Multiline = True
         Me.TxtObservacion.Name = "TxtObservacion"
         Me.TxtObservacion.Size = New System.Drawing.Size(279, 81)
-        Me.TxtObservacion.TabIndex = 1
+        Me.TxtObservacion.TabIndex = 7
         Me.TxtObservacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'NuevoCliente
@@ -333,6 +333,7 @@ Partial Class NuevoCliente
         Me.Controls.Add(Me.Label1)
         Me.Name = "NuevoCliente"
         Me.Opacity = 0.95R
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.IconPictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
