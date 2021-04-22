@@ -10,8 +10,11 @@ Public Class LoginForm1
     ' como el nombre de usuario, nombre para mostrar, etc.
 
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
+        CompruebaUsuario()
+    End Sub
+    Private Sub CompruebaUsuario()
         Dim Basededatos As New MySqlConnectionStringBuilder()
-        Basededatos.Server = "localhost"
+        Basededatos.Server = cmbservidormysql.Text
         Basededatos.UserID = cmbusuariodb.Text
         Basededatos.Password = CmbClavedb.Text
         Basededatos.Database = CmbBasedeDatos.Text
@@ -33,19 +36,18 @@ Public Class LoginForm1
                 Form1.Show()
                 Form1.LBLUSUARIO.Text = r.GetString("USUARIO")
                 Form1.LBLIDUSUARIO.Text = r.GetString("IDUSUARIO")
-                conn2.Close()
+                con.Close()
                 Me.Hide()
 
             Else
                 MsgBox("Acceso Incorrecto")
-                conn2.Close()
+                con.Close()
             End If
         Catch ex As Exception
             MsgBox("no se pudo conectar")
             MsgBox(ex.Message)
-            conn2.Close()
+            con.Close()
         End Try
-
     End Sub
 
 
@@ -56,7 +58,6 @@ Public Class LoginForm1
 
     Private Sub LoginForm1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CargaServidores()
-
     End Sub
     Private Sub CargaServidores()
         conn2.Open()
@@ -81,7 +82,12 @@ Public Class LoginForm1
             Me.CmbUsuarioRouter.DisplayMember = "usuariorb"
             Me.CmbEstado.DataSource = dsDPc.Tables("servidores")
             Me.CmbEstado.DisplayMember = "estado"
-
+            Me.cmbservidormysql.DataSource = dsDPc.Tables("servidores")
+            Me.cmbservidormysql.DisplayMember = "ip_servidor_mysql"
+            Me.CmbClavedb.DataSource = dsDPc.Tables("servidores")
+            Me.CmbClavedb.DisplayMember = "passworddb"
+            Me.cmbusuariodb.DataSource = dsDPc.Tables("servidores")
+            Me.cmbusuariodb.DisplayMember = "usuario"
 
             conn2.Close()
         Else
@@ -90,8 +96,5 @@ Public Class LoginForm1
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Conectarse()
-        conn2.Close()
-    End Sub
+
 End Class
