@@ -23,16 +23,17 @@ Partial Class NuevaConexion
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.IconPictureBox2 = New FontAwesome.Sharp.IconPictureBox()
+        Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TxtObservacion = New System.Windows.Forms.TextBox()
         Me.TxtEmail = New System.Windows.Forms.TextBox()
         Me.TxtProvincia = New System.Windows.Forms.TextBox()
         Me.TxtCiudad = New System.Windows.Forms.TextBox()
-        Me.TxtDni = New System.Windows.Forms.TextBox()
         Me.txtCelular = New System.Windows.Forms.TextBox()
         Me.txtDomicilio = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.txtNombreCompleto = New System.Windows.Forms.TextBox()
+        Me.txtIpServicio = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -41,13 +42,13 @@ Partial Class NuevaConexion
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnGuardar = New FontAwesome.Sharp.IconButton()
-        Me.IconPictureBox2 = New FontAwesome.Sharp.IconPictureBox()
-        Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
         Me.btnBuscarCliente = New FontAwesome.Sharp.IconButton()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.lblcliente = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.lblidcliente = New System.Windows.Forms.Label()
+        Me.CmbPlan = New System.Windows.Forms.ComboBox()
+        Me.cmbidplan = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         CType(Me.IconPictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -62,8 +63,38 @@ Partial Class NuevaConexion
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(638, 51)
+        Me.Panel1.Size = New System.Drawing.Size(880, 51)
         Me.Panel1.TabIndex = 4
+        '
+        'IconPictureBox2
+        '
+        Me.IconPictureBox2.BackColor = System.Drawing.SystemColors.GrayText
+        Me.IconPictureBox2.ForeColor = System.Drawing.Color.Gold
+        Me.IconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Podcast
+        Me.IconPictureBox2.IconColor = System.Drawing.Color.Gold
+        Me.IconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconPictureBox2.IconSize = 42
+        Me.IconPictureBox2.Location = New System.Drawing.Point(239, 3)
+        Me.IconPictureBox2.Name = "IconPictureBox2"
+        Me.IconPictureBox2.Size = New System.Drawing.Size(42, 42)
+        Me.IconPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.IconPictureBox2.TabIndex = 0
+        Me.IconPictureBox2.TabStop = False
+        '
+        'IconPictureBox1
+        '
+        Me.IconPictureBox1.BackColor = System.Drawing.SystemColors.GrayText
+        Me.IconPictureBox1.ForeColor = System.Drawing.Color.Gold
+        Me.IconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Podcast
+        Me.IconPictureBox1.IconColor = System.Drawing.Color.Gold
+        Me.IconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconPictureBox1.IconSize = 42
+        Me.IconPictureBox1.Location = New System.Drawing.Point(3, 3)
+        Me.IconPictureBox1.Name = "IconPictureBox1"
+        Me.IconPictureBox1.Size = New System.Drawing.Size(42, 42)
+        Me.IconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.IconPictureBox1.TabIndex = 0
+        Me.IconPictureBox1.TabStop = False
         '
         'Label2
         '
@@ -125,17 +156,6 @@ Partial Class NuevaConexion
         Me.TxtCiudad.TabIndex = 104
         Me.TxtCiudad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'TxtDni
-        '
-        Me.TxtDni.BackColor = System.Drawing.Color.Gray
-        Me.TxtDni.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtDni.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.TxtDni.Location = New System.Drawing.Point(212, 338)
-        Me.TxtDni.Name = "TxtDni"
-        Me.TxtDni.Size = New System.Drawing.Size(279, 27)
-        Me.TxtDni.TabIndex = 103
-        Me.TxtDni.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'txtCelular
         '
         Me.txtCelular.BackColor = System.Drawing.Color.Gray
@@ -170,16 +190,16 @@ Partial Class NuevaConexion
         Me.Label9.Text = "Observacion"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'txtNombreCompleto
+        'txtIpServicio
         '
-        Me.txtNombreCompleto.BackColor = System.Drawing.Color.Gray
-        Me.txtNombreCompleto.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombreCompleto.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.txtNombreCompleto.Location = New System.Drawing.Point(212, 236)
-        Me.txtNombreCompleto.Name = "txtNombreCompleto"
-        Me.txtNombreCompleto.Size = New System.Drawing.Size(279, 27)
-        Me.txtNombreCompleto.TabIndex = 100
-        Me.txtNombreCompleto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtIpServicio.BackColor = System.Drawing.Color.Gray
+        Me.txtIpServicio.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtIpServicio.ForeColor = System.Drawing.SystemColors.HighlightText
+        Me.txtIpServicio.Location = New System.Drawing.Point(212, 236)
+        Me.txtIpServicio.Name = "txtIpServicio"
+        Me.txtIpServicio.Size = New System.Drawing.Size(279, 27)
+        Me.txtIpServicio.TabIndex = 100
+        Me.txtIpServicio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label8
         '
@@ -226,7 +246,7 @@ Partial Class NuevaConexion
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(168, 34)
         Me.Label5.TabIndex = 110
-        Me.Label5.Text = "DNI"
+        Me.Label5.Text = "Plan Internet"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label4
@@ -238,7 +258,7 @@ Partial Class NuevaConexion
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(168, 34)
         Me.Label4.TabIndex = 109
-        Me.Label4.Text = "Celular"
+        Me.Label4.Text = "Mac"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label3
@@ -250,7 +270,7 @@ Partial Class NuevaConexion
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(168, 34)
         Me.Label3.TabIndex = 114
-        Me.Label3.Text = "Domicilio Legal"
+        Me.Label3.Text = "Domicilio Inst"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label1
@@ -281,36 +301,6 @@ Partial Class NuevaConexion
         Me.btnGuardar.TabIndex = 108
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = False
-        '
-        'IconPictureBox2
-        '
-        Me.IconPictureBox2.BackColor = System.Drawing.SystemColors.GrayText
-        Me.IconPictureBox2.ForeColor = System.Drawing.Color.Gold
-        Me.IconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Podcast
-        Me.IconPictureBox2.IconColor = System.Drawing.Color.Gold
-        Me.IconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconPictureBox2.IconSize = 42
-        Me.IconPictureBox2.Location = New System.Drawing.Point(239, 3)
-        Me.IconPictureBox2.Name = "IconPictureBox2"
-        Me.IconPictureBox2.Size = New System.Drawing.Size(42, 42)
-        Me.IconPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.IconPictureBox2.TabIndex = 0
-        Me.IconPictureBox2.TabStop = False
-        '
-        'IconPictureBox1
-        '
-        Me.IconPictureBox1.BackColor = System.Drawing.SystemColors.GrayText
-        Me.IconPictureBox1.ForeColor = System.Drawing.Color.Gold
-        Me.IconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Podcast
-        Me.IconPictureBox1.IconColor = System.Drawing.Color.Gold
-        Me.IconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconPictureBox1.IconSize = 42
-        Me.IconPictureBox1.Location = New System.Drawing.Point(3, 3)
-        Me.IconPictureBox1.Name = "IconPictureBox1"
-        Me.IconPictureBox1.Size = New System.Drawing.Size(42, 42)
-        Me.IconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.IconPictureBox1.TabIndex = 0
-        Me.IconPictureBox1.TabStop = False
         '
         'btnBuscarCliente
         '
@@ -377,23 +367,50 @@ Partial Class NuevaConexion
         Me.lblidcliente.Text = "0"
         Me.lblidcliente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'CmbPlan
+        '
+        Me.CmbPlan.BackColor = System.Drawing.Color.DarkGray
+        Me.CmbPlan.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CmbPlan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CmbPlan.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CmbPlan.ForeColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CmbPlan.FormattingEnabled = True
+        Me.CmbPlan.Location = New System.Drawing.Point(333, 337)
+        Me.CmbPlan.Name = "CmbPlan"
+        Me.CmbPlan.Size = New System.Drawing.Size(158, 22)
+        Me.CmbPlan.TabIndex = 117
+        '
+        'cmbidplan
+        '
+        Me.cmbidplan.BackColor = System.Drawing.Color.DarkGray
+        Me.cmbidplan.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmbidplan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbidplan.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbidplan.ForeColor = System.Drawing.SystemColors.MenuHighlight
+        Me.cmbidplan.FormattingEnabled = True
+        Me.cmbidplan.Location = New System.Drawing.Point(212, 337)
+        Me.cmbidplan.Name = "cmbidplan"
+        Me.cmbidplan.Size = New System.Drawing.Size(112, 22)
+        Me.cmbidplan.TabIndex = 117
+        '
         'NuevaConexion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
-        Me.ClientSize = New System.Drawing.Size(638, 641)
+        Me.ClientSize = New System.Drawing.Size(880, 641)
+        Me.Controls.Add(Me.cmbidplan)
+        Me.Controls.Add(Me.CmbPlan)
         Me.Controls.Add(Me.btnBuscarCliente)
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.TxtObservacion)
         Me.Controls.Add(Me.TxtEmail)
         Me.Controls.Add(Me.TxtProvincia)
         Me.Controls.Add(Me.TxtCiudad)
-        Me.Controls.Add(Me.TxtDni)
         Me.Controls.Add(Me.txtCelular)
         Me.Controls.Add(Me.txtDomicilio)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.txtNombreCompleto)
+        Me.Controls.Add(Me.txtIpServicio)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -426,11 +443,10 @@ Partial Class NuevaConexion
     Friend WithEvents TxtEmail As TextBox
     Friend WithEvents TxtProvincia As TextBox
     Friend WithEvents TxtCiudad As TextBox
-    Friend WithEvents TxtDni As TextBox
     Friend WithEvents txtCelular As TextBox
     Friend WithEvents txtDomicilio As TextBox
     Friend WithEvents Label9 As Label
-    Friend WithEvents txtNombreCompleto As TextBox
+    Friend WithEvents txtIpServicio As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
@@ -443,4 +459,6 @@ Partial Class NuevaConexion
     Friend WithEvents lblcliente As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents lblidcliente As Label
+    Friend WithEvents CmbPlan As ComboBox
+    Friend WithEvents cmbidplan As ComboBox
 End Class

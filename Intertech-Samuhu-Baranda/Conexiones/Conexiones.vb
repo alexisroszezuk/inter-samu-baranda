@@ -42,4 +42,9 @@ Public Class Conexiones
         End If
         con.Close()
     End Sub
+
+    Private Sub btnNuevoCLiente_Click(sender As Object, e As EventArgs) Handles btnNuevoCLiente.Click
+        NuevaConexion.Show()
+
+    End Sub
 End Class

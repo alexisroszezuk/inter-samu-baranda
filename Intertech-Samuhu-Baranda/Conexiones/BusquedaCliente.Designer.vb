@@ -23,17 +23,19 @@ Partial Class BusquedaCliente
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.IconPictureBox2 = New FontAwesome.Sharp.IconPictureBox()
+        Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtNombreCompleto = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.IconPictureBox2 = New FontAwesome.Sharp.IconPictureBox()
-        Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
         Me.cmbidcliente = New System.Windows.Forms.ComboBox()
+        Me.Cmbcliente = New System.Windows.Forms.ComboBox()
+        Me.btnBusquedaCliente = New FontAwesome.Sharp.IconButton()
         Me.Panel1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.IconPictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -47,6 +49,36 @@ Partial Class BusquedaCliente
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(800, 51)
         Me.Panel1.TabIndex = 4
+        '
+        'IconPictureBox2
+        '
+        Me.IconPictureBox2.BackColor = System.Drawing.SystemColors.GrayText
+        Me.IconPictureBox2.ForeColor = System.Drawing.Color.CornflowerBlue
+        Me.IconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.PeopleArrows
+        Me.IconPictureBox2.IconColor = System.Drawing.Color.CornflowerBlue
+        Me.IconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconPictureBox2.IconSize = 42
+        Me.IconPictureBox2.Location = New System.Drawing.Point(253, 3)
+        Me.IconPictureBox2.Name = "IconPictureBox2"
+        Me.IconPictureBox2.Size = New System.Drawing.Size(42, 42)
+        Me.IconPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.IconPictureBox2.TabIndex = 0
+        Me.IconPictureBox2.TabStop = False
+        '
+        'IconPictureBox1
+        '
+        Me.IconPictureBox1.BackColor = System.Drawing.SystemColors.GrayText
+        Me.IconPictureBox1.ForeColor = System.Drawing.Color.CornflowerBlue
+        Me.IconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.PeopleArrows
+        Me.IconPictureBox1.IconColor = System.Drawing.Color.CornflowerBlue
+        Me.IconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconPictureBox1.IconSize = 42
+        Me.IconPictureBox1.Location = New System.Drawing.Point(3, 3)
+        Me.IconPictureBox1.Name = "IconPictureBox1"
+        Me.IconPictureBox1.Size = New System.Drawing.Size(42, 42)
+        Me.IconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.IconPictureBox1.TabIndex = 0
+        Me.IconPictureBox1.TabStop = False
         '
         'Label2
         '
@@ -100,36 +132,6 @@ Partial Class BusquedaCliente
         Me.DataGridView1.Size = New System.Drawing.Size(775, 308)
         Me.DataGridView1.TabIndex = 102
         '
-        'IconPictureBox2
-        '
-        Me.IconPictureBox2.BackColor = System.Drawing.SystemColors.GrayText
-        Me.IconPictureBox2.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.IconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.PeopleArrows
-        Me.IconPictureBox2.IconColor = System.Drawing.Color.CornflowerBlue
-        Me.IconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconPictureBox2.IconSize = 42
-        Me.IconPictureBox2.Location = New System.Drawing.Point(253, 3)
-        Me.IconPictureBox2.Name = "IconPictureBox2"
-        Me.IconPictureBox2.Size = New System.Drawing.Size(42, 42)
-        Me.IconPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.IconPictureBox2.TabIndex = 0
-        Me.IconPictureBox2.TabStop = False
-        '
-        'IconPictureBox1
-        '
-        Me.IconPictureBox1.BackColor = System.Drawing.SystemColors.GrayText
-        Me.IconPictureBox1.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.IconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.PeopleArrows
-        Me.IconPictureBox1.IconColor = System.Drawing.Color.CornflowerBlue
-        Me.IconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconPictureBox1.IconSize = 42
-        Me.IconPictureBox1.Location = New System.Drawing.Point(3, 3)
-        Me.IconPictureBox1.Name = "IconPictureBox1"
-        Me.IconPictureBox1.Size = New System.Drawing.Size(42, 42)
-        Me.IconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.IconPictureBox1.TabIndex = 0
-        Me.IconPictureBox1.TabStop = False
-        '
         'cmbidcliente
         '
         Me.cmbidcliente.BackColor = System.Drawing.Color.DarkGray
@@ -140,8 +142,37 @@ Partial Class BusquedaCliente
         Me.cmbidcliente.FormattingEnabled = True
         Me.cmbidcliente.Location = New System.Drawing.Point(379, 91)
         Me.cmbidcliente.Name = "cmbidcliente"
-        Me.cmbidcliente.Size = New System.Drawing.Size(114, 22)
+        Me.cmbidcliente.Size = New System.Drawing.Size(87, 22)
         Me.cmbidcliente.TabIndex = 103
+        '
+        'Cmbcliente
+        '
+        Me.Cmbcliente.BackColor = System.Drawing.Color.DarkGray
+        Me.Cmbcliente.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Cmbcliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Cmbcliente.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Cmbcliente.ForeColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Cmbcliente.FormattingEnabled = True
+        Me.Cmbcliente.Location = New System.Drawing.Point(472, 91)
+        Me.Cmbcliente.Name = "Cmbcliente"
+        Me.Cmbcliente.Size = New System.Drawing.Size(316, 22)
+        Me.Cmbcliente.TabIndex = 103
+        '
+        'btnBusquedaCliente
+        '
+        Me.btnBusquedaCliente.FlatAppearance.BorderColor = System.Drawing.Color.Lime
+        Me.btnBusquedaCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBusquedaCliente.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBusquedaCliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnBusquedaCliente.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btnBusquedaCliente.IconColor = System.Drawing.Color.Black
+        Me.btnBusquedaCliente.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnBusquedaCliente.Location = New System.Drawing.Point(13, 57)
+        Me.btnBusquedaCliente.Name = "btnBusquedaCliente"
+        Me.btnBusquedaCliente.Size = New System.Drawing.Size(62, 61)
+        Me.btnBusquedaCliente.TabIndex = 104
+        Me.btnBusquedaCliente.Text = "Venta"
+        Me.btnBusquedaCliente.UseVisualStyleBackColor = True
         '
         'BusquedaCliente
         '
@@ -149,6 +180,8 @@ Partial Class BusquedaCliente
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnBusquedaCliente)
+        Me.Controls.Add(Me.Cmbcliente)
         Me.Controls.Add(Me.cmbidcliente)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.txtNombreCompleto)
@@ -158,9 +191,9 @@ Partial Class BusquedaCliente
         Me.Text = "BusquedaCliente"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.IconPictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -174,4 +207,6 @@ Partial Class BusquedaCliente
     Friend WithEvents Label1 As Label
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents cmbidcliente As ComboBox
+    Friend WithEvents Cmbcliente As ComboBox
+    Friend WithEvents btnBusquedaCliente As FontAwesome.Sharp.IconButton
 End Class
